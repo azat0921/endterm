@@ -38,18 +38,18 @@ http.createServer(function(req, res) {
             serveStaticFile(res, '/about.html', 'text/html');
             break;
 
-        case '/img/gallery/graduation.jpg':
+        case '/img/gallery/graduation':
             serveStaticFile(res, '/img/gallery/graduation.jpg', 'image/jpeg');
             break;
 
-        case '/img/gallery/study.jpg':
+        case '/img/gallery/study':
             serveStaticFile(res, '/img/gallery/study.jpg', 'image/jpeg');
             break;
         
         case '/img/about.jpg':
             serveStaticFile(res, '/img/about.jpg', 'image/jpeg');
             break;
-        case '/video/memes.mp4':
+        case '/video/memes':
             serveStaticFile(res, '/video/students/memes.mp4', 'video/mp4');
             break;
         case '/img/cry.jpg':
@@ -58,6 +58,8 @@ http.createServer(function(req, res) {
             
         default:
             serveStaticFile(res, '/error.html', 'text/html', 404);
+            
+            
             break;
         
     }
